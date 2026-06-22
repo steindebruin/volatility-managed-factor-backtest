@@ -14,9 +14,9 @@ Three variance forecasts of increasing sophistication are compared:
 - **HAR** — the heterogeneous autoregressive model of Corsi (2009)
 - **RF** — a random forest on the same set of features
 
-Each forecast feeds a Moreira-Muir (2017) volatility-managed portfolio for the six Fama-French factors (Mkt, SMB, HML, RMW, CMA, Mom) over a common Jan 1963 - Apr 2026 sample. Forecasts use an expanding window with monthly refitting; the Random Forest is retuned annually. Portfolios are capped at 3x leverage and charged 10 bps on drift-adjusted turnover.
+Each forecast is used in a volatility-managed portfolio for the six Fama-French factors (Mkt, SMB, HML, RMW, CMA, Mom) over a common Jan 1963 - Apr 2026 sample. Forecasts use an expanding window with monthly refitting. The random forest is retuned annually. Portfolios are capped at 3x leverage and charged 10 bps on drift-adjusted turnover.
 
-Both halves of the question are tested formally: forecast accuracy with out-of-sample R², QLIKE loss, and Diebold-Mariano tests. Portfolio performance with net Sharpe ratios and a stationary block bootstrap for Sharpe differences.
+Forecast accuracy is assessed by out-of-sample R², QLIKE loss, and Diebold-Mariano tests. Portfolio performance with net Sharpe ratios and a stationary block bootstrap for Sharpe differences.
 
 ## Main result
 
