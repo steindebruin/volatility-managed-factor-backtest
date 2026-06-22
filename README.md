@@ -47,4 +47,4 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Factor data is downloaded from Kenneth French's data library on first run and cached locally. Forecasts are cached in `results/forecasts/`; to regenerate them from scratch, delete that folder and rerun (around 15 minutes for the Random Forest across all factors).
+Factor data is downloaded from Kenneth French's data library on first run and cached locally. Forecasts are cached in `results/forecasts/`. To regenerate them from scratch, delete that folder and rerun (around 15 minutes for the random forest across all factors).
